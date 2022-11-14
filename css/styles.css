@@ -1,0 +1,260 @@
+body {
+	height: 100vh;
+	overflow-y: hidden;
+	background-image: url('https://4.bp.blogspot.com/-dhXmUZ9os3A/WOugo_Hq7jI/AAAAAAAAEBY/EJnkl5QUBwcOvN6xTWsslca5XTTFsTrVwCLcB/s1600/FoilageGrass_1.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+}
+
+.castle img {
+	width: 200px;
+	margin-left: 1320px;
+	margin-top: 58px;
+
+}
+
+.house img {
+	width: 80px;
+}
+
+#un {
+	margin-left: 750px;
+	margin-top: 58px;
+}
+
+#two{
+	margin-left: 250px;
+	margin-top: 50px;
+}
+
+#three{
+	margin-left: 1200px;
+	margin-top: -100px;
+}
+
+#fivform{ 
+height: 100%;
+ }
+
+ input[type=submit]{
+ 	width: 100%;
+ 	background-color: black;
+ 	color: white;
+	padding: 10px;
+	border-radius: 50px;
+	display: inline-block;	
+ 	border: solid 5px black;
+ 	transition: 0.3s;
+ }
+
+  input[type=submit]:hover{
+ 	background-color: white;
+ 	border: solid 5px black;
+ 	color: black
+ }
+
+ input[type=text]{
+ 	width: 100%;
+ 	background-color: black;
+ 	color: white;
+	padding: 15px;
+	border-radius: 50px;
+	display: inline-block;
+	border: none;
+ 	text-align: center; 
+ 	text-align-last: center;
+ }
+
+ .custom-select{
+ 	width: 100%;
+ 	height: 5%;
+ 	background-color: black;
+ 	color: white;
+	padding: 15px;
+	border-radius: 50px;
+	display: inline-block;
+	border: none;
+ 	text-align: center; 
+ 	text-align-last: center;
+ }
+
+
+.start h2{
+	font-size: 30vh;
+	text-align: center;
+}
+
+#item02{
+	display: none;
+}
+#btn2{
+	display: none;
+}
+
+
+.container-fluid {
+	margin: 0px;
+	padding: 0px;
+}
+
+.game {
+	display: none;
+	/*width: 2000px;*/
+	/*height: 1500px;*/
+	z-index: -5;
+	/*background: url('resources/game.jpg') no-repeat;*/
+}
+
+h1{
+	color: #fff;
+}
+
+#mention{
+	color: #fff;
+}
+
+.game-constructor .infos {
+    margin-top: -200px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 180px;
+    padding: 10px;
+    background-color: rgba(255,255,255,0.9);
+    display: none;
+}
+
+.game .infos {
+	display: block;
+	position: fixed;
+	width: 300px;
+	height: 50px;
+	right: 0px;
+	background-color: rgba(224, 113, 40,0.7);
+	border: 4px solid #fff;
+	margin-right: 105px;
+	margin-top: 20px;
+	z-index: 1;
+	text-align: center;
+	color: white;
+	font-family: helvetica;
+	font-style: italic;
+	font-weight: bold;
+	font-variant: small-caps;
+}
+
+.game .infos img.diamond {
+	max-height: 30px;
+	margin-top: -10px;
+}
+
+.game .tower, .game .follow-tower, .game .monster {
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	z-index: 1;
+	text-align: center;
+}
+
+.game .tower img, .game .follow-tower img, .game .monster img {
+	width: 60px;
+	height: 60px;
+}
+
+.game .monster .progress-bar {
+	margin-top: 5px;
+}
+
+.game .monster .progress-bar.target {
+	background-color: green;
+}
+
+.game .monster .money {
+	text-align: center;
+	display: none;
+}
+
+.game .area {
+	display: none;
+	position: absolute;
+	background-color: rgba(100,100,100,0.1);
+	z-index: 0;
+}
+
+.game .follow-tower {
+	display: none;
+}
+
+.game .follow-tower .area {
+	display: block;
+}
+
+.game .shot {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: black;
+}
+
+.game .parcours {
+	position: absolute;
+	z-index:0;
+	cursor: not-allowed;
+}
+
+.game .parcours div {
+	position: absolute;
+	background-color: #b87306;
+	opacity: 1;
+}
+
+.game-constructor {
+	display: none;
+	width: 100%;
+	height: 150px;
+	position: fixed;
+	bottom: 0px;
+	background-color: rgba(255,255,255,0.9);
+	z-index: 2;
+	text-align: center;
+	padding: 20px;
+}
+
+.game-constructor .tower img.tower {
+	max-height: 70px;
+}
+
+.game-constructor .tower img.diamond {
+	max-height: 30px;
+	margin-top: -10px;
+}
+
+.game-constructor .tower.disabled {
+	cursor: not-allowed;
+	opacity: 0.7;
+}
+
+.game-constructor .infos {
+    margin-top: -200px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 180px;
+    padding: 10px;
+    background-color: rgba(255,255,255,0.9);
+    display: none;
+}
+
+.game-constructor .infos p {
+	font-size: 11pt;
+}
+
+.game .peon {
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 3;
+	background: url('../resources/builder.png') no-repeat;
+}
